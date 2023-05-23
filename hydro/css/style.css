@@ -1,0 +1,178 @@
+  *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Archivo', sans-serif;
+      font-family: 'Inter', sans-serif;
+      font-family: 'Nunito Sans', sans-serif;
+  }
+
+  a {
+      text-decoration: none;
+      color: black;
+  }
+
+  li {
+      list-style: none;
+  }
+  /* $theme-colors: (
+      --primary-100:#E5E5E5 
+      --primary-300:#838383
+      --accent-100:#FFC107;
+      --accent-200:#916400;
+      --text-100:#FFFFFF;
+      --text-200:#e0e0e0;
+      --bg-100:#1E1E1E;
+      --bg-200:#2d2d2d;
+      --bg-300:#454545;    
+      
+
+  ); */
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: black;
+  }
+  /* inicio de hader */
+  #header{
+    display: flex;
+    background-color: #554565;
+    position: relative;
+    height: 170px;
+    box-shadow: 31px 26px 32px 8px rgba(0,0,0,0.1);
+  }
+
+
+  #header img{
+  width:150px;
+  height:100px;
+  margin: 30px;
+  padding:20px;
+  margin-bottom: 0px;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  }
+.navbar{
+  display: flex;
+  align-items: center;
+}
+  .nav{
+  background-color: #554565;
+  flex-direction: row;
+  display: flex;
+  justify-content: flex-end;
+  }
+
+  .navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-s{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+  
+nav ul li{
+ padding: 0 10px;
+margin-right: 10px; 
+}
+
+  nav ul li a{
+    color: #FFFFFF;
+    font-size: 20px;
+    transition: 0.5s ease;
+    text-decoration: none;
+  font-weight: bold;
+    position: relative;
+    padding: 10px 15px;
+  }
+  nav ul li a:hover{
+    color: #be6acc;
+    text-decoration: none;
+  }
+
+  .navbar ul li:first-child {
+    margin-left: 0;
+  }
+  
+ .navbar li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #be6acc;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .navbar li a:focus::after,
+  .navbar li a:active::after {
+    width: 100%;
+  }
+  
+  .conteiner{
+    position: absolute;
+    left: 74%;
+    top: 40%;
+    padding: 0 10px;
+  }
+  
+  input{
+    outline: none;
+    box-sizing: border-box;
+    height: 30px;
+    width: 3px;
+    padding: 0 15px;
+    color: #FFFFFF;
+    border-radius: 50px;
+    font-size: 20px;
+    border: 1px solid #be6acc;
+  transition: all 0.7s ease;
+  box-shadow: inset 0px 0px 13px 23px rgba(0,0,0,0.1);
+  background-color: #be6acc;
+  }
+
+  ::placeholder{
+    color:#FFFFFF
+    
+
+  }
+
+  .btn {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 40px;
+    height: 40px;
+    background: #D50000;
+    line-height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s;
+  }
+  
+ 
+  
+  .btn i{
+    font-size: 25px;
+    color: black;
+    line-height: 80px;
+    transition: all 0.7s ease;
+  }
+
+.conteiner:hover input{
+  width: 200px;
+
+}
+
+.conteiner:hover i{
+  transform: rotate(-360deg);
+}
+
+.btn:hover{
+  background: #554565;
+}
